@@ -14,17 +14,30 @@ int main()
 
 	while (t--)
 	{
-		string str;
+		string str, result;
 		getline(cin, str);
-		cout << str << '\n';
-		/*int count = 0;
+		int count = 0;
 
 		for (char ch : str)
 		{
 			if (ch == '(')
 				count++;
+			else
+				count--;
 
-		}*/
+			if (count < 0)
+			{
+				result = "NO";
+				break;
+			}
+		}
+
+		if (count == 0)
+			result = "YES";
+		else
+			result = "NO";
+
+		cout << result << '\n';
 	}
 
 }
