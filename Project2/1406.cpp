@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
 	ios_base::sync_with_stdio(false);
-	cin.tie();
+	cin.tie(nullptr);
 
 	stack<char> lstack, rstack;
 	string result, temp;
