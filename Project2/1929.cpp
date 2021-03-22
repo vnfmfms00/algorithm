@@ -4,9 +4,11 @@ using namespace std;
 
 int main()
 {
-	int prime[1000];
-	int pn = 0;
-	bool check[1000001] = { false };
+	int prime[1000]; // 소수 저장
+	int pn = 0; // 소수의 개수
+	bool check[1000001] = { false }; // 지워졌으면 true
+
+	check[0] = check[1] = true;
 
 	int m, n;
 	scanf("%d %d", &m, &n);
