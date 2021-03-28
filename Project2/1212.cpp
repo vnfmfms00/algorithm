@@ -12,4 +12,6 @@ int main()
 	cin >> s;
 
 	cout << s;
+
+
 }
